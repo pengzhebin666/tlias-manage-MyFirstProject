@@ -1,0 +1,19 @@
+package com.itheima.pojo;
+
+import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDate;
+@Data
+public class ClazzQueryParam {
+    private Integer page = 1; //页码
+    private Integer pageSize = 10; //每页展示记录数
+    private String name;//名称
+    private String room;// 班级教室
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate begin; //班级开始时间
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate end; //班级结束时间
+    private Integer masterId;
+    private String status;
+}

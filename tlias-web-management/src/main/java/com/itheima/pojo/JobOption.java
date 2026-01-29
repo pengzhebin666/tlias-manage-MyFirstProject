@@ -1,0 +1,18 @@
+package com.itheima.pojo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class JobOption {
+
+    //职位列表
+    private List<String> jobList;
+
+    //人数列表
+    private List<Integer> dataList;
+}
